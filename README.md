@@ -3,7 +3,7 @@
 This is just a fun little game where users can try and guess the tile in a 20x20 grid. They're also able to manage
 their stats.
 
-This was just a little lunch time project inspired by someones elses project I saw. 
+This was just a little lunch time project inspired by someones elses project I saw. Still uses the default Vite styling.
 
 ## Setting up the project
 
