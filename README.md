@@ -1,5 +1,7 @@
 # Tile Guessing Game Game (hot or cold)
 
+[Play Game](https://hot-cold-tiles.vercel.app/)
+
 This is just a fun little game where users can try and guess the tile in a 20x20 grid. They're also able to manage
 their stats.
 
