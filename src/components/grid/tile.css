@@ -1,0 +1,36 @@
+.tile {
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid var(--tile-border);
+    transition: transform 0.1s;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+.tile-default {
+    background-color: var(--tile-default);
+}
+
+.tile-far {
+    background-color: var(--tile-far);
+}
+
+.tile-close {
+    background-color: var(--tile-close);
+}
+
+.tile-vclose {
+    background-color: var(--tile-vclose);
+}
+
+.tile-vvclose {
+    background-color: var(--tile-vvclose);
+}
+
+.tile-target {
+    background-color: var(--tile-target);
+}

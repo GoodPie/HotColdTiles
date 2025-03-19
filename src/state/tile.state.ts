@@ -1,4 +1,4 @@
-export enum TileStates {
+export enum TileState {
     Default,
     Far,
     Close,

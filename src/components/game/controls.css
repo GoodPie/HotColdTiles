@@ -1,0 +1,10 @@
+.game-controls {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.control-button {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+}

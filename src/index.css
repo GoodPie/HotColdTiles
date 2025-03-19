@@ -1,69 +1,66 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    /* Common variables */
+    --border-radius: 8px;
+    --transition-speed: 0.25s;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    /* Dark mode is default */
+    --bg-color: #242424;
+    --text-color: rgba(255, 255, 255, 0.87);
+    --button-bg: #1a1a1a;
+    --button-hover: #646cff;
+    --tile-border: #333;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 100vw;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+    /* Tile colors */
+    --tile-default: #444;
+    --tile-far: #8b0000;
+    --tile-close: #b45f04;
+    --tile-vclose: #c4a000;
+    --tile-vvclose: #72aa00;
+    --tile-target: #3a7113;
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+    :root {
+        --bg-color: #ffffff;
+        --text-color: #213547;
+        --button-bg: #f9f9f9;
+        --button-hover: #747bff;
+        --tile-border: #eee;
+
+        /* Tile colors - lighter versions */
+        --tile-default: #f0f0f0;
+        --tile-far: #ffcccc;
+        --tile-close: #ffcc99;
+        --tile-vclose: #ffffcc;
+        --tile-vvclose: #e6ffcc;
+        --tile-target: #ccffcc;
+    }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+button {
+    border-radius: var(--border-radius);
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--button-bg);
+    cursor: pointer;
+    transition: border-color var(--transition-speed);
+}
+
+button:hover {
+    border-color: var(--button-hover);
 }
