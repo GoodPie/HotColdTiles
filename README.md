@@ -9,7 +9,7 @@ This is just a simple little project where I can have fun experimenting with dif
 ## Features
 
 - 20x20 interactive game grid
-- Color-based proximity feedback
+- Colour-based proximity feedback
 - Game statistics tracking
 - Responsive design
 - History visualisation with Chart.js
